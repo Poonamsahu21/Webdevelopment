@@ -8,14 +8,36 @@
 <body>
     <h1>form to apply for sigma web development for learn</h1>
     <form action="post">
-        <label for="username"></label>
-        <input type="text" id="username" name="username" placeholder="enter your name">
-        <label for="male"></label>
-        <input type="radio" name="gender" id="male" placeholder="enter your gender">
-        <label for="female"></label>
-        <input type="radio" name="gender" id="female" placeholder="enter your gender">
-        <label for="other"></label>
-        <input type="radio" name="gender" id="other" placeholder="enter your gender">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus>
+        </div>
+        <div>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">other</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">subscribe for nwesletter</label>
+        </div>
+        <div>
+            <label for="comment">enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <select name="eduction" id="">
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="ug">ug</option>
+                <option value="pg">pg</option>
+            </select>
+        </div>
     </form>
 </body>
 </html>
