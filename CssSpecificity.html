@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        /* the specifcity of this selector is 1 */
+        h1 {
+            color: aqua;
+            background-color: burlywood
+        }
+
+        /* the specifcity of this selector is 10 */
+        .cyellow {
+            color: yellow;
+        }
+
+        /* the specifcity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* this is an example of attribute selector and specificity is 10 */
+        [data-x=a] {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        /* this is the complex specificity , specificity = 1 + 10 = 11 */
+        h1.cyellow {
+            background-color: black;
+            color: greenyellow;
+        }
+
+        /* the specifcity of this selector is 10 */
+        .cblue {
+            background-color: bisque;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="cyellow cred cblue" data-x="a">Css Specificity</h1>
+    </div>
+    <!-- Specificity Of Selectors -->
+
+    <!-- inline style > id selector > class or attribute selector > element selector > universal selector-->
+
+    <!-- Specificity Calculation  -->
+    <!--Universal Selector = 0  -->
+    <!--Element selector and pseudo-element = 1  -->
+    <!--Class selector = 100 -->
+    <!--Id selector = 1000   -->
+
+
+</body>
+
+</html>
